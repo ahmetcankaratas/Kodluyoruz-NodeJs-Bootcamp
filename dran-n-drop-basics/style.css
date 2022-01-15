@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*The box-sizing property allows us to include the padding and border in an element's total width and height.
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height:*/
+
+body {
+  font-family: 'Courier New', Courier, monospace;  
+  font-size: 16px;
+  background-color: blanchedalmond;
+  overflow: hidden;
+}
+
+h1 {
+    color: #3d3d3d;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.drop-targets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 20px 0;
+}
+
+.team {
+    height: 340px;
+    width: 170px;
+    border: solid 6px #ccc;
+    margin: 10px;
+
+    /* align players in the area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-over {
+    border: dashed 3px red;
+}
+
+.playerList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.room{
+    height: 60px;
+    width: 60px;
+    border: solid 3px #ccc;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.player {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+#player1 {
+    background-color:cadetblue
+}
+
+#player2 {
+  background-color: chocolate;
+}
+
+#player3 {
+  background-color: darkgoldenrod;
+}
+
+#player4 {
+  background-color: darksalmon;
+}
+
+#player5 {
+  background-color: darkslategray;
+}
+#player6 {
+  background-color: firebrick;
+}
+
+.hide {
+    display: none;
+}

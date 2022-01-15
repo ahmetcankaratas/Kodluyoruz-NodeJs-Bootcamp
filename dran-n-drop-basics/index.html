@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan="tr">
+
+  <head>
+      <mete charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--
+    This gives the browser instructions on how to control the page's dimensions and scaling.
+    The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+    Ref: https://www.w3schools.com/css/css_rwd_viewport.asp
+      -->
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div class="container">
+    <h1>Arena</h1>
+    <div class="drop-targets">
+      <div class="team"></div>
+      <div class="team"></div>
+    </div>
+    <div class="playerList">
+        <div class="room">
+            <div class="player" id="player1" draggable="true">
+            </div>
+        </div>
+        <div class="room">
+            <div class="player" id="player2" draggable="true">
+            </div>
+        </div>
+        <div class="room">
+            <div class="player" id="player3" draggable="true">
+            </div>
+        </div>
+        <div class="room">
+            <div class="player" id="player4" draggable="true">
+            </div>
+        </div>
+        <div class="room">
+            <div class="player" id="player5" draggable="true">
+            </div>
+        </div>
+        <div class="room">
+            <div class="player" id="player6" draggable="true">
+            </div>
+        </div>   
+    </div>    
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
