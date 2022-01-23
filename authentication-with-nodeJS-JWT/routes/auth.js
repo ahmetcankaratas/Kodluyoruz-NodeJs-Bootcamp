@@ -10,8 +10,11 @@ router.post('/register', async (req, res) => {
   // Validate before we send the information to DB
   const { error } = regValidation(req.body);
   if (error) {
-    return res.status(400).
-    send(`<p>${error.details[0].message}</p><a href='/api/user/register'>Back</a>`); //BAD REQUEST
+    return res
+      .status(400)
+      .send(
+        `<p>${error.details[0].message}</p><a href='/api/user/register'>Back</a>`
+      ); //BAD REQUEST
   }
 
   // Check if user already in the DB
@@ -49,8 +52,11 @@ router.post('/login', async (req, res) => {
   // Validate before we send the information to DB
   const { error } = logValidation(req.body);
   if (error) {
-    return res.status(400)
-    .send(`<p>${error.details[0].message}</p><a href='/api/user/login'>Back</a>`); //BAD REQUEST
+    return res
+      .status(400)
+      .send(
+        `<p>${error.details[0].message}</p><a href='/api/user/login'>Back</a>`
+      ); //BAD REQUEST
   }
 
   // Check if the user name exists in the DB
